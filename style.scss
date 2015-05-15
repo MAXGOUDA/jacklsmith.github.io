@@ -6,6 +6,7 @@
 \*------------------------------------*/
 
 @import "reset";
+@import "grid";
 
 /*------------------------------------*\
     #VARIABLES
@@ -17,32 +18,40 @@ $blue-dark: #30527a;
 $grey-light: #f3f3f3;
 $grey-medium: #ababab;
 $grey-dark: #202020;
+$grey-borders: rgba(0,0,0,0.1);
 $yellow-light: #FFFECA;
 
 /*------------------------------------*\
     #FONT-EXTENDS
 \*------------------------------------*/
 
- .regular {
-     font-family: "Apercu Regular", Calibri, sans-serif;
-     font-size-adjust: 0.508;
-     font-weight: normal;
-     font-style: normal;
- }
+.regular {
+    font-family: "Apercu Regular", Calibri, sans-serif;
+    font-size-adjust: 0.508;
+    font-weight: normal;
+    font-style: normal;
+}
 
- .medium {
-     font-family: "Apercu Medium", Calibri, sans-serif;
-     font-size-adjust: 0.508;
-     font-weight: 600;
-     font-style: normal;
- }
+.medium {
+    font-family: "Apercu Medium", Calibri, sans-serif;
+    font-size-adjust: 0.508;
+    font-weight: 600;
+    font-style: normal;
+}
 
- .bold {
-     font-family: "Apercu Bold", Calibri, sans-serif;
-     font-size-adjust: 0.508;
-     font-weight: bold;
-     font-style: normal;
- }
+.bold {
+    font-family: "Apercu Bold", Calibri, sans-serif;
+    font-size-adjust: 0.508;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.italic {
+    font-family: "Apercu Italic", Calibri, sans-serif;
+    font-size-adjust: 0.508;
+    font-weight: normal;
+    font-style: italic;
+}
 
 /*------------------------------------*\
     #TYPE
@@ -50,13 +59,54 @@ $yellow-light: #FFFECA;
 
 body {
     @extend .regular;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.5;
     color: $base-font-color;
 }
 
 p {
-    margin-bottom: 1.5em;
+    margin: 0 0 40px 0;
+}
+
+h1 {
+    @extend .medium;
+    font-size: 56px; 
+    margin: 0 0 40px 0;
+    line-height: 1.1;
+}
+
+em {
+    @extend .italic;
+}
+
+strong {
+    @extend .bold;
+}
+
+.mini-m {
+    margin: 0 0 15px 0;
+}
+
+.subtle {
+    font-size: 14px;
+    color: $grey-medium;
+}
+
+.no-m {
+    margin: 0;
+}
+
+/*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
+
+ul {
+    margin: 0 0 35px 0;
+    padding-left: 50px;
+}
+
+li {
+    margin-bottom: 5px;
 }
 
 /*------------------------------------*\
@@ -66,6 +116,80 @@ p {
 a {
     color: $blue-medium;
     text-decoration: none;
+}
+
+/*------------------------------------*\
+    #SITEWIDE-LAYOUT
+\*------------------------------------*/
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 40px;
+    background-color: #F6F6F6;
+    max-width: 220px;
+}
+
+.logo-link {
+    display: inline-block;
+    img {
+        width: 120px;
+    }
+}
+
+.site-nav {
+    margin-top: 50px;
+    @extend .bold;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        margin: 0 0 30px 0;
+    }
+    a {
+        color: $base-font-color;
+    }
+}
+
+.sidebar-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+}
+
+.sidebar-avatar {
+    width: 90px;
+    border-radius: 45px;
+    border: 3px #fff solid;
+}
+
+.sidebar-desc {
+    font-size: 14px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 20px;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+/*------------------------------------*\
+    #HOMEPAGE
+\*------------------------------------*/
+
+.home-intro {
+    padding-top: 40px;
+    color: lighten($base-font-color, 25%);
+    border-bottom: 1px $grey-borders solid; 
+    margin-bottom: 40px;
 }
 
 // @import "highlights"; 

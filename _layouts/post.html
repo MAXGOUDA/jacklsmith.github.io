@@ -3,11 +3,9 @@ layout: default
 ---
 
 <article class="post">
-	<h1>{{ page.title }}</h1>
+	<h1 class="mini-m">{{ page.title }}</h1>
+	<p class="subtle date">Written on {{ page.date | date: "%e %B, %Y" }}</p>
 	<div class="entry">
 		{{ content }}
-	</div>
-	<div class="date">
-		Written on {{ page.date | date: "%B %e, %Y" }}
 	</div>
 </article>
