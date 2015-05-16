@@ -2,7 +2,6 @@
 layout: post
 title: iOS, navigation, and hamburgers
 ---
-
 Remember the days when nearly every app on your iPhone used the same fixed 4 or 5 tab navigation at the bottom of your screen? Extreme gloss and all?
 
 <aside class="blog-image full-width-image">

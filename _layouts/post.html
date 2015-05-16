@@ -1,11 +1,55 @@
 ---
 layout: default
 ---
-
-<article class="post">
+<article class="main-content">
 	<h1 class="mini-m">{{ page.title }}</h1>
 	<p class="subtle date">Written on {{ page.date | date: "%e %B, %Y" }}</p>
 	<div class="entry">
 		{{ content }}
 	</div>
+	<section class="rss-subscribe">
+		<h3>Want updates?</h3>
+		<p>Get a message in your inbox each time I write about design (generally once or twice a month). <em>Zero spam</em>.</p>
+		<form action="http://jacksmithdesign.createsend.com/t/d/s/eutut/" method="post" class="feedburner-form" id="subscribe-form">
+		    <div class="rss-email-wrap">
+		        <input id="fieldEmail" name="cm-eutut-eutut" type="email" class="rss-email" placeholder="Enter your email" required />
+		    </div>
+		    <div class="rss-submit-wrap">
+		        <button type="submit" class="rss-submit"><img src="/images/white-tick.svg" class="subscribe-tick" />Subscribe</button>
+		    </div>
+		</form>
+	</section>
+	<nav class="post-pagination">
+		{% if page.previous.url %} 
+	    	<a href="{{page.previous.url}}" title="{{page.previous.title}}" class="previous-post-or-archive-link previous-post-link"><span>{{page.previous.title}}</span></a>
+		{% endif %}
+		{% if page.next.url %} 
+			<a href="{{page.next.url}}" title="{{page.next.title}}" class="next-post-link"><span>{{page.next.title}}</span></a>
+		{% endif %}
+	</nav>
 </article>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<script>
+$('#subscribe-form').submit(function(e) {
+    e.preventDefault();
+    $.getJSON(
+        this.action + "?callback=?",
+        $(this).serialize(), function(data) {
+        if (data.Status === 400) {
+            // $('.newsletter-response').html("Error: " + data.Message).slideDown('slow').delay(5000).slideUp('slow');
+            $('.rss-submit').removeClass("success");
+            $('.rss-submit').addClass("active error").delay(2500).queue(function(next) {
+                $(this).removeClass("active error success");
+                next();
+            });
+        } else { // 200
+            // $('.newsletter-response').html("Success: " + data.Message).slideDown('slow').delay(5000).slideUp('slow');
+            $('.rss-submit').removeClass("error");
+            $('.rss-submit').addClass("active success").delay(2500).queue(function(next) {
+                $(this).removeClass("active error success");
+                next();
+            });
+        }
+    });
+});
+</script>

@@ -7,9 +7,9 @@ title: Journal Archive
 	{% for post in site.posts %}
 	<article class="archive-entry">
 		<a href="{{ post.url }}" title="Read {{ post.title }}">
-			<h3>{{ post.title }}</h3>
+			<h4 class="no-m">{{ post.title }}</h4>
 		</a>
-		<p>{{ post.date | date: "%d %B, %Y" }}</p>
+		<p class="subtle date">{{ post.date | date: "%d %B, %Y" }}</p>
 	</article>
 	{% endfor %}
 </section>

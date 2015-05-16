@@ -2,7 +2,6 @@
 layout: post
 title: humblebrag
 ---
-
 Recently it's seemed like talking about your accomplishments and progression has become a bad thing. More and more people I stay in touch with online (most notably on Twitter) seem to be avoiding any mention of their better moments in life incase it gets inferred as bragging.
 
 This really makes me sad. Earlier on in my career I found a lot of inspiration and drive from seeing peers jet-setting around the world, building companies, selling companies, buying the latest gadget thing, moving to a lavish flat or working space, and generally reaping the benefits of an industry that tends to give a lot back.

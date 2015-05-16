@@ -1,5 +1,5 @@
 ---
-layout: post-entry
+layout: post
 title: Flip the sign up
 ---
 <p class="post-meta">8 January, 2012</p>

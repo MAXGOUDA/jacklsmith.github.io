@@ -2,7 +2,6 @@
 layout: post
 title: Good for Nothing
 ---
-
 This weekend, I had the pleasure of being at Birmingham's first [Good for Nothing](http://www.goodfornothing.com/) gig. I was introduced to Good for Nothing sometime last year via my good friend [Ryan](https://twitter.com/RyanDC), who actually ended up organising Birmingham's debut alongside [Lisa Barrett](https://twitter.com/lisabarrett_) and [Immy Kaur](https://twitter.com/ImmyKaur).
 
 To briefly describe it, Good for Nothing is all about bringing makers and tinkerers together, utilising their varying skills to work on and help with cause-led innovation. Basically, it's getting good people together to help create positive impact in our society. Note, these people aren't just internet makers. Events tend to attract a much more varied collection of people — writers, architects, engineers, students, business owners, and numerous other brilliantly skilled minds.

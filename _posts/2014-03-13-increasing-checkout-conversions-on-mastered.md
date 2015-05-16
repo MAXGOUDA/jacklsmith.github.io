@@ -2,7 +2,6 @@
 layout: post
 title: Increasing checkout conversions on Mastered
 ---
-
 I've been working on [Mastered](http://www.mastered.com) since last autumn. Following the launch at New Year, it's mainly been good news with some fantastic feedback and a growing number of paying customers.
 
 However, one statistic that had been consistently bothering us was the unusually high drop off rate within the checkout page. With a successful conversion rate of 12&#37;, it felt like that was a priority to try and improve on. While I felt we'd have to accept a slightly lower than [average percentage](http://baymard.com/lists/cart-abandonment-rate "Some stats on abandonment rate") due to our fairly insistent checkout prompting within the free trials provided (i.e. a *lot* of people will end up on the checkout), 12&#37; still felt too low.

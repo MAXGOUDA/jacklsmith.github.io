@@ -2,7 +2,6 @@
 layout: post
 title: Fear of organisation
 ---
-
 Since the beginning of this year, I've had that constant nagging worry of simply having too much to do, something that most within this industry will be familiar with I'm sure.
 
 Simultaneously, I've felt frustration with myself for not doing enough about it, which if I'm honest with myself, is a feeling I practically live my life with, albeit generally more subtly. A symptom of my fondness of work, but mainly, my ability to procrastinate.

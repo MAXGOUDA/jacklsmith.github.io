@@ -2,7 +2,6 @@
 layout: post
 title: Quick wins
 ---
-
 A little earlier in the week, [Ben](http://benhowdle.im) and I released a small little side project called [Permeate](http://permeate.im), an app that calculates and displays the 10 most popular recent tweets from the people you follow. It's a great way to catch up on the more interesting and useful things without having to skim through everything in your Twitter timeline.
 
 We both thought it would be useful for us, so we went ahead and made it. By the usage stats and feedback we've had, lots of people agree.

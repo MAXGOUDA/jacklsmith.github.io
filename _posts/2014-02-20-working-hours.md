@@ -2,7 +2,6 @@
 layout: post
 title: Working hours
 ---
-
 The myth of "long hours = business/career success" has largely been debunked and nothing makes me happier.
 
 Seeing successful founders and tech workers speak out against the daft propaganda is exactly what the industry needed to hear. Long hours are proof that something in your business or the business you're working for is broken. It [isn't a badge of honour.](http://jeffarchibald.ca/60-hour-work-week-badge-honour/)
