@@ -550,5 +550,35 @@ hr {
     }
 }
 
+/*------------------------------------*\
+    #PORTFOLIO
+\*------------------------------------*/
+
+.portfolio-entry {
+    margin-bottom: 40px;
+    border-bottom: 1px $grey-borders solid;
+    @extend .cf;
+}
+
+.portfolio-entry:last-of-type {
+    border-bottom: 0;
+}
+
+.project-title {
+    @extend .cf;
+}
+
+.visit-project-link {
+    float: right;
+    font-weight: 200;
+    position: relative;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    -webkit-transition: padding 0.2s ease-out;
+    -moz-transition: padding 0.2s ease-out;
+    -o-transition: padding 0.2s ease-out;
+    transition: padding 0.2s ease-out;
+}
 
 // @import "highlights"; 
