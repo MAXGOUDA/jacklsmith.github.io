@@ -1,20 +1,24 @@
 ---
 layout: default
 ---
-<section class="home-intro">
-	<p>I'm a digital product designer based in London. I get excited about working with great companies, and building great products. If you're interested in hiring me, find out more about <a href="/describing/">how I work</a>.</p>
-</section>
-{% for post in paginator.posts %}
-<article class="post">
-	<h1 class="mini-m">
-		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-	</h1>
-	<p class="subtle date">Written on {{ post.date | date: "%e %B, %Y" }}</p>
-	{{ post.content }}
-	<!-- {{ post.excerpt }}
-	<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>  -->
-</article>
-{% endfor %}
-<nav class="post-pagination">
-    <a href="/writing/" title="Archive" class="previous-post-or-archive-link"><span>Older posts in the archive</span></a>
-</nav>
+<div class="grid grid-pad">
+    <div class="col-1-1">
+		<section class="home-intro">
+			<p>I'm a digital product designer based in London. I get excited about working with great companies, and building great products. If you're interested in hiring me, find out more about <a href="/describing/">how I work</a>.</p>
+		</section>
+		{% for post in paginator.posts %}
+		<article class="post">
+			<h1 class="mini-m">
+				<a href="{{ site.baseurl }}{{ post.url }}" class="post-permalink">{{ post.title }}</a>
+			</h1>
+			<p class="subtle date">Written on {{ post.date | date: "%e %B, %Y" }}</p>
+			{{ post.content }}
+			<!-- {{ post.excerpt }}
+			<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>  -->
+		</article>
+		{% endfor %}
+		<nav class="post-pagination">
+		    <a href="/writing/" title="Archive" class="previous-post-or-archive-link"><span>Older posts in the archive</span></a>
+		</nav>
+	</div>
+</div>

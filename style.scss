@@ -91,6 +91,12 @@ h3 {
 
 h4 {
     @extend .bold;
+    font-size: 20px; 
+    margin: 0 0 40px 0;
+}
+
+h5 {
+    @extend .bold;
     font-size: 1em; 
     margin: 0 0 40px 0;
 }
@@ -126,6 +132,9 @@ strong {
     -webkit-box-shadow: inset 4px 0px 0px 0px rgba(0,0,0,0.1);
     box-shadow: inset 4px 0px 0px 0px rgba(0,0,0,0.1);
     text-align: right;
+    a {
+        text-decoration: none;
+    }
 }
 
 .image-caption {
@@ -157,7 +166,7 @@ li {
 
 a {
     color: $blue-medium;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /*------------------------------------*\
@@ -202,7 +211,8 @@ button {
     height: 100%;
     padding: 40px;
     background-color: #F6F6F6;
-    min-width: 220px;
+    width: 220px;
+    z-index: 5;
 }
 
 .logo-link {
@@ -225,6 +235,7 @@ button {
     }
     a {
         color: $base-font-color;
+        text-decoration: none;
     }
 }
 
@@ -262,6 +273,9 @@ button {
     border-top: 1px $grey-borders solid;
     font-size: 12px;
     color: lighten($base-font-color, 25%);
+    a {
+        text-decoration: none;
+    }
 }
 
 /*------------------------------------*\
@@ -285,9 +299,29 @@ button {
     max-width: 300px;
 }
 
+.faq {
+    p {
+        padding-bottom: 40px;
+        border-bottom: 1px $grey-borders solid;
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }
+    h4 {
+        &:first-of-type {
+           padding-top: 40px;
+           border-top: 1px $grey-borders solid; 
+        }
+    }
+}
+
 /*------------------------------------*\
     #POSTS
 \*------------------------------------*/
+
+.post-permalink {
+    text-decoration: none;
+}
 
 // Images
 
@@ -558,6 +592,16 @@ hr {
     margin-bottom: 40px;
     border-bottom: 1px $grey-borders solid;
     @extend .cf;
+    &.headliner {
+        border-bottom: 0;
+        padding-left: 220px;
+    }
+}
+
+.portfolio-image-wrap {
+    max-height: 600px;
+    overflow: hidden;
+    position: relative;
 }
 
 .portfolio-entry:last-of-type {
@@ -570,15 +614,26 @@ hr {
 
 .visit-project-link {
     float: right;
-    font-weight: 200;
+    font-size: 21px;
     position: relative;
+    bottom: -10px;
     padding-right: 0;
-    font-size: 14px;
-    line-height: 1.8;
     -webkit-transition: padding 0.2s ease-out;
     -moz-transition: padding 0.2s ease-out;
     -o-transition: padding 0.2s ease-out;
     transition: padding 0.2s ease-out;
+    &.case-study {
+        bottom: -26px;
+    }
 }
 
-// @import "highlights"; 
+.main-project-image {
+    margin-bottom: 40px;
+}
+
+.study-intro {
+    height: 500px;
+    background: rgba(0,0,0,.1);
+}
+
+@import "highlights"; 

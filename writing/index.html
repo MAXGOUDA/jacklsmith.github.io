@@ -6,8 +6,8 @@ title: Journal Archive
 <section class="archive-listings">
 	{% for post in site.posts %}
 	<article class="archive-entry">
-		<a href="{{ post.url }}" title="Read {{ post.title }}">
-			<h4 class="no-m">{{ post.title }}</h4>
+		<a href="{{ post.url }}" title="Read {{ post.title }}" class="post-permalink">
+			<h5 class="no-m">{{ post.title }}</h5>
 		</a>
 		<p class="subtle date">{{ post.date | date: "%d %B, %Y" }}</p>
 	</article>
