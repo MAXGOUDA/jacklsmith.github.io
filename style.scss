@@ -631,9 +631,47 @@ hr {
     margin-bottom: 40px;
 }
 
+.study-intro-wrap {
+    padding-left: 220px;
+}
+
 .study-intro {
-    height: 500px;
+    height: 600px;
     background: rgba(0,0,0,.1);
+    position: relative;
+}
+
+.study-intro-video-wrap {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.study-intro-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+.test {
+    margin: 0;
+}
+
+.intro-video-overlay {
+    background-color: rgba(0,0,0,.7);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px;
+    color: #fff;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
 }
 
 @import "highlights"; 
