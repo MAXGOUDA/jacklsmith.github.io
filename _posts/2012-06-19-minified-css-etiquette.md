@@ -6,7 +6,7 @@ Minifying CSS should always be encouraged. To simply summarise, it'll reduce the
 
 However, it does render it pretty much unreadable to the human eye (unless they make the effort of manually putting it through a de-minifier first).
 
-<img src="/images/posts/markup-notthemosthumanfriendly.jpg" alt="Minified CSS" class="full-width-image" />
+<p class="no-m"><img src="/images/posts/markup-notthemosthumanfriendly.jpg" alt="Minified CSS" class="full-width-image" /></p>
 <p class="caption">Minified CSS isn't known for being the most human friendly&hellip;</p>
 
 Inspecting other people's code is known to be one of the best ways to learn web development and improve your overall knowledge and skill-set, and unreadable code kind of hinders that.

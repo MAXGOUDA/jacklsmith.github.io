@@ -167,6 +167,9 @@ li {
 a {
     color: $blue-medium;
     text-decoration: underline;
+    &:hover {
+        color: $blue-dark;
+    }
 }
 
 /*------------------------------------*\
@@ -263,6 +266,9 @@ button {
     margin-right: 20px;
     &:last-of-type {
         margin-right: 0;
+    }
+    &:hover {
+        opacity: .6;
     }
 }
 
@@ -632,19 +638,20 @@ hr {
 }
 
 .study-intro-wrap {
-    margin-bottom: 40px;
+    position: relative;
 }
 
 .study-intro {
     height: 600px;
     background: rgba(0,0,0,.1);
     position: relative;
+    margin-bottom: 40px;
 }
 
 .study-intro-video-wrap {
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -658,12 +665,8 @@ hr {
     width: 100%;
 }
 
-.test {
-    margin: 0;
-}
-
 .intro-video-overlay {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.6);
     left: 0;
     right: 0;
     bottom: 0;
@@ -674,8 +677,8 @@ hr {
 }
 
 .inline-screeny {
-    padding: 6px;
-    background: #fff;
+    padding: 10px;
+    background-color: #fff;
     border: 1px $grey-borders solid;
 }
 

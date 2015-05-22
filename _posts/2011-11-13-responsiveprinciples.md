@@ -87,8 +87,7 @@ As the title of this section states - always promote the content.
 
 For example - on a desktop monitor, a large navigation block can work, but will it on a mobile?
 
-<img src="http://designedbyjack.com/wp-content/uploads/2011/11/boston-globe-redesign.jpeg" alt="The Boston Globe" />
-
+<p class="no-m"><img src="http://designedbyjack.com/wp-content/uploads/2011/11/boston-globe-redesign.jpeg" alt="The Boston Globe" /></p>
 <p class="caption">The Boston Globe has a whole lot of thought behind its navigation. Mobile users don't want to presented with an epic list of links upon page load - they want real content. Especially on an online newspaper.</p>
 
 The navigation menu could simply have stacked up vertically when viewed on a mobile. Instead, it was rearranged as clickable sub menus.

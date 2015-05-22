@@ -18,7 +18,7 @@ title: Flip the sign up
 <p>Although we're all used to them, name/email/password fields are boring. In order to try and make them a little more interesting, we generally fill our homepage or sign up page with details on the service/website and some fancy imagery as a 'build up' to the sign up form.</p>
 <p>Why not share details about the website by including more interesting and relevant areas of the profile data in the sign up process?</p>
 <p>You can't lie with a form. The information you're asking for is going to be directly relevant with the website. A quirky and interesting form and users will be quick to fill it in. See my quick example below.</p>
-<img title="Sign up comparison" src="http://designedbyjack.com/wp-content/uploads/2012/06/comparesignups.jpg" alt="Sign up comparison" class="full-width-image" />
+<p class="no-m"><img title="Sign up comparison" src="http://designedbyjack.com/wp-content/uploads/2012/06/comparesignups.jpg" alt="Sign up comparison" class="full-width-image" /></p>
 <p class="caption">Which would you rather fill in?</p>
 <h2>2. Reduce the wasteland effect</h2>
 <p>Alright, if you see high registration figures as ultimate success, then you probably won't view this as an advantage.</p>
@@ -26,4 +26,4 @@ title: Flip the sign up
 <p>Less sign ups - yes. But <strong>more genuine ones</strong>.</p>
 <p>High registration rates aren't everything, just look at Google+ and the vast wasteland of empty profile pages.</p>
 <h2>Try flipping the sign up</h2>
-<p>There's nothing wrong with traditional sign up form methods, but it's not the only optional available. Try thinking outside the box. If you think flipping the process a little could work, give it a go.</p>
+<p>There's nothing wrong with traditional sign up form methods, but it's not the only option available. Try thinking outside the box. If you think flipping the process a little could work, give it a go.</p>
