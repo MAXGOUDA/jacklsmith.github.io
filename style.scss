@@ -92,7 +92,7 @@ h3 {
 h4 {
     @extend .bold;
     font-size: 20px; 
-    margin: 0 0 40px 0;
+    margin: 0 0 30px 0;
 }
 
 h5 {
@@ -632,7 +632,7 @@ hr {
 }
 
 .study-intro-wrap {
-    padding-left: 220px;
+    margin-bottom: 40px;
 }
 
 .study-intro {
@@ -652,7 +652,7 @@ hr {
 
 .study-intro-video {
     position: absolute;
-    left: 0;
+    left: 220px;
     top: 0;
     z-index: 0;
     width: 100%;
@@ -663,7 +663,7 @@ hr {
 }
 
 .intro-video-overlay {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.5);
     left: 0;
     right: 0;
     bottom: 0;
@@ -671,7 +671,12 @@ hr {
     color: #fff;
     position: absolute;
     z-index: 3;
-    text-align: center;
+}
+
+.inline-screeny {
+    padding: 6px;
+    background: #fff;
+    border: 1px $grey-borders solid;
 }
 
 @import "highlights"; 
