@@ -147,6 +147,14 @@ strong {
     margin: 0;
 }
 
+::selection {
+    background: $yellow-light;
+}
+
+::-moz-selection {
+    background: $yellow-light;
+}
+
 /*------------------------------------*\
     #LISTS
 \*------------------------------------*/
@@ -170,7 +178,18 @@ a {
     &:hover {
         color: $blue-dark;
     }
+    &:active {
+        background-color: $yellow-light;
+    }
 }
+
+.sidebar {
+    a:active {
+        background: none;
+    }
+}
+
+
 
 /*------------------------------------*\
     #FORMS
@@ -188,6 +207,15 @@ button {
 /*------------------------------------*\
     #SITEWIDE-LAYOUT
 \*------------------------------------*/
+
+
+@media only screen and (max-width : 1240px) {
+    .main-grid {
+        float: left;
+        padding-left: 260px;
+        max-width: 1020px;
+    }
+}
 
 .cf:before,
 .cf:after {
@@ -272,6 +300,35 @@ button {
     }
 }
 
+@media only screen and (max-width : 715px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        margin-bottom: 0;
+        padding: 30px 40px;
+    }
+    .sidebar-bottom {
+        display: none;
+    }
+    .site-nav {
+        margin-top: 20px;
+        li {
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+    }
+    .logo-link {
+        img {
+            width: 90px;
+        }
+    }
+    .main-grid {
+        padding-left: 40px;
+        float: none;
+    }
+}
+
 // Footer
 
 .site-footer {
@@ -324,6 +381,15 @@ button {
 /*------------------------------------*\
     #POSTS
 \*------------------------------------*/
+
+.home-post {
+    border-bottom: 1px $grey-borders solid;
+    margin-bottom: 40px;
+    &:last-of-type {
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+}
 
 .post-permalink {
     text-decoration: none;
@@ -594,13 +660,20 @@ hr {
     #PORTFOLIO
 \*------------------------------------*/
 
+.portfolio-fullwidth {
+    padding-left: 220px;
+    margin-bottom: 40px;
+    img {
+        width: 100%;
+    }
+}
+
 .portfolio-entry {
     margin-bottom: 40px;
     border-bottom: 1px $grey-borders solid;
     @extend .cf;
     &.headliner {
-        border-bottom: 0;
-        padding-left: 220px;
+        margin-bottom: 0;
     }
 }
 
@@ -657,6 +730,14 @@ hr {
     overflow: hidden;
 }
 
+.intro-cover-image {
+    position: absolute;
+    left: 220px;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+}
+
 .study-intro-video {
     position: absolute;
     left: 220px;
@@ -680,6 +761,15 @@ hr {
     padding: 10px;
     background-color: #fff;
     border: 1px $grey-borders solid;
+}
+
+.project-sep {
+    height: 10px;
+    margin-bottom: 40px;
+    background-color: #F6F6F6;
+    &.plot {
+       
+    }
 }
 
 @import "highlights"; 
