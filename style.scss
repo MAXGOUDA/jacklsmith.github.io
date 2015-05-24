@@ -33,21 +33,21 @@ $yellow-light: #FFFECA;
 }
 
 .medium {
-    font-family: "Apercu Medium", Calibri, sans-serif;
+    font-family: "Apercu Medium", Calibri, Helvetica, sans-serif;
     font-size-adjust: 0.508;
     font-weight: 600;
     font-style: normal;
 }
 
 .bold {
-    font-family: "Apercu Bold", Calibri, sans-serif;
+    font-family: "Apercu Bold", Calibri, Helvetica, sans-serif;
     font-size-adjust: 0.508;
     font-weight: bold;
     font-style: normal;
 }
 
 .italic {
-    font-family: "Apercu Italic", Calibri, sans-serif;
+    font-family: "Apercu Italic", Calibri, Helvetica, sans-serif;
     font-size-adjust: 0.508;
     font-weight: normal;
     font-style: italic;
@@ -202,6 +202,18 @@ strong {
 
 ::-moz-selection {
     background: $yellow-light;
+}
+
+.wf-loading body, .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading h5, .wf-loading em, .wf-loading strong {
+    font-family: Calibri, Helvetica, sans-serif;
+}
+
+.hide-fonts {
+    opacity: 0;
+}
+
+.hide-fonts.wf-active {
+    opacity: 1;
 }
 
 /*------------------------------------*\

@@ -11,6 +11,12 @@
         <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
         <!-- Fontdeck -->
         <script type="text/javascript">
+        var htmlEl = document.getElementsByTagName('html')[0];
+        htmlEl.className = ' hide-fonts';
+        setTimeout(function() {
+            htmlEl.className = htmlEl.className.replace('hide-fonts', '');
+        }, 900)
+        
         WebFontConfig = { fontdeck: { id: '56445' } };
 
         (function() {
@@ -23,6 +29,7 @@
           s.parentNode.insertBefore(wf, s);
         })();
         </script>
+
     </head>
     <body>
         <div class="sidebar">
