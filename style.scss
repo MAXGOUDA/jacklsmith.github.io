@@ -895,6 +895,22 @@ hr {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    &.plot-wrap {
+        background-image: url("../images/portfolio/plot-1.jpg");
+        background-size: cover;
+    }
+    &.hailo-wrap {
+        background-image: url("../images/portfolio/hailo-1.jpg");
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width : 715px) {
+    .study-intro-video-wrap {
+        video {
+            display: none;
+        }
+    }
 }
 
 .intro-cover-image {
