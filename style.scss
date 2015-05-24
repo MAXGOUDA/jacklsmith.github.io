@@ -325,11 +325,11 @@ button {
     position: fixed;
     left: 0;
     top: 0;
-    height: 100%;
+    bottom: 0;
     padding: 40px;
     background-color: #F6F6F6;
     width: 220px;
-    z-index: 5;
+    z-index: 5; 
 }
 
 .logo-link {
