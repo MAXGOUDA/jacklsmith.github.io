@@ -157,6 +157,11 @@ strong {
     color: $grey-light;
 }
 
+.with-border {
+    padding-bottom: 40px;
+    border-bottom: 1px $grey-borders solid;
+}
+
 @media only screen and (max-width : 715px) {
     .intro-paragraph {
         font-size: 20px;
@@ -170,6 +175,10 @@ strong {
 .subtle {
     font-size: 14px;
     color: $grey-medium;
+}
+
+.faded {
+    color: lighten($base-font-color, 25%);
 }
 
 .caption {
@@ -227,6 +236,12 @@ ul {
 
 li {
     margin-bottom: 5px;
+}
+
+ol {
+    margin: 0 0 35px 0;
+    padding-left: 50px;
+    border-left: 3px $grey-light solid;
 }
 
 /*------------------------------------*\
