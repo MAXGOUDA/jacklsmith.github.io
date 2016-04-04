@@ -6,16 +6,18 @@ layout: default
 		<section class="home-intro">
 			<p>I'm a digital product designer based in Nottingham, UK. I get excited about working with great companies, and building great products. If you're interested in hiring me, find out more about <a href="/describing/">how I work</a>.</p>
 		</section>
-		{% for post in paginator.posts %}
-		<article class="post home-post">
-			<h1 class="mini-m">
-				<a href="{{ site.baseurl }}{{ post.url }}" class="post-permalink">{{ post.title }}</a>
-			</h1>
-			<p class="subtle date">Written on {{ post.date | date: "%e %B, %Y" }}</p>
-			{{ post.content }}
-			<!-- {{ post.excerpt }}
-			<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>  -->
-		</article>
+		{% for post in site.posts limit:7 %}
+			{% if post.external_url %}{% else %}
+			<article class="post home-post">
+				<h1 class="mini-m">
+					<a href="{{ site.baseurl }}{{ post.url }}" class="post-permalink">{{ post.title }}</a>
+				</h1>
+				<p class="subtle date">Written on {{ post.date | date: "%e %B, %Y" }}</p>
+				{{ post.content }}
+				<!-- {{ post.excerpt }}
+				<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>  -->
+			</article>
+			{% endif %}
 		{% endfor %}
 		<nav class="post-pagination">
 		    <a href="/writing/" title="Archive" class="previous-post-or-archive-link"><span>Older posts in the archive</span></a>

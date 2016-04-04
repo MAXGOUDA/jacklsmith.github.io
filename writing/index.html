@@ -1,16 +1,23 @@
 ---
 layout: page
 title: Blog Archive
-excerpt: A blog on design and working in tech.
+excerpt: A blog on design, tech, and movies.
 ---
 
 <section class="archive-listings">
 	{% for post in site.posts %}
 	<article class="archive-entry">
-		<a href="{{ post.url }}" title="Read {{ post.title }}" class="post-permalink">
-			<h5 class="no-m">{{ post.title }}</h5>
-		</a>
-		<p class="subtle date">{{ post.date | date: "%d %B, %Y" }}</p>
+		{% if post.external_url %}
+			<a href="{{ post.external_url }}" title="Read {{ post.title }}" class="post-permalink post-permalink--plot">
+				<h5 class="no-m">{{ post.title }}</h5>
+			</a>
+			<p class="subtle date">Written for Plot, on {{ post.date | date: "%d %B, %Y" }}</p>
+		{% else %}
+			<a href="{{ post.url }}" title="Read {{ post.title }}" class="post-permalink">
+				<h5 class="no-m">{{ post.title }}</h5>
+			</a>
+			<p class="subtle date">{{ post.date | date: "%d %B, %Y" }}</p>
+		{% endif %}
 	</article>
 	{% endfor %}
 </section>
