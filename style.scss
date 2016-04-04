@@ -205,6 +205,10 @@ strong {
     margin: 0;
 }
 
+.emoji {
+    font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";
+}
+
 ::selection {
     background: $yellow-light;
 }
@@ -482,6 +486,7 @@ button {
     color: lighten($base-font-color, 25%);
     border-bottom: 1px $grey-borders solid; 
     margin-bottom: 40px;
+    font-size: 1.75rem;
 }
 
 /*------------------------------------*\
@@ -538,12 +543,9 @@ button {
 
 .post-permalink {
     text-decoration: none;
-    &:hover {
-        color: #3575c0;
-    }
 }
 
-.post-permalink--plot {
+.archive-listings .post-permalink.post-permalink--plot {
     color: #E72C1F;
     background-image: url("../images/icon-clip.svg");
     background-repeat: no-repeat;
@@ -558,6 +560,7 @@ button {
 .archive-listings {
     .post-permalink {
         &:hover {
+            color: #3575c0;
             text-decoration: underline;
         }
     }

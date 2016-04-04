@@ -5,6 +5,8 @@ layout: default
     <div class="col-1-1">
 		<section class="home-intro">
 			<p>I'm a digital product designer based in Nottingham, UK. I get excited about working with great companies, and building great products. If you're interested in hiring me, find out more about <a href="/describing/">how I work</a>.</p>
+			<p>Alongside freelance design, I co-founded and am currently working on <a href="http://plotapp.io">Plot</a>, an iOS app for movie fans.</p>
+			<p>I'm actively scoping out new projects to work on, so <a href="mailto:hello@jacksmith.is">get in touch</a> if you've got a project you wish to discuss. <span class="emoji">&#x270C;</span></p>
 		</section>
 		{% for post in site.posts limit:7 %}
 			{% if post.external_url %}{% else %}
@@ -13,9 +15,6 @@ layout: default
 					<a href="{{ site.baseurl }}{{ post.url }}" class="post-permalink">{{ post.title }}</a>
 				</h1>
 				<p class="subtle date">Written on {{ post.date | date: "%e %B, %Y" }}</p>
-				{{ post.content }}
-				<!-- {{ post.excerpt }}
-				<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>  -->
 			</article>
 			{% endif %}
 		{% endfor %}
