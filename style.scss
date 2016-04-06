@@ -484,9 +484,16 @@ button {
 .home-intro {
     padding-top: 40px;
     color: lighten($base-font-color, 25%);
-    border-bottom: 1px $grey-borders solid; 
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-size: 1.6rem;
+}
+
+.home-posts {
+    font-size: 1.6rem;
+    color: lighten($base-font-color, 25%);
+    padding-top: 80px;
+    margin-top: 60px;
+    border-top: 1px $grey-borders solid; 
 }
 
 .home-link {
@@ -494,6 +501,14 @@ button {
     display: block;
     margin-bottom: 40px;
     padding: 40px 40px 0 40px;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    h2 {
+        margin-bottom: 20px;
+    }
 }
 
 .home-link__meta {
@@ -506,24 +521,28 @@ button {
     color: #E72C1F;
     text-decoration: none;
     &:hover {
-        color: #E72C1F;
+        color: #fff;
         text-decoration: none;
+        background: #E72C1F;
     }
 }
 
-.home-link--plot__img {
+.home-link--plot__slides {
     width: 40%;
     display: inline-block;
+    vertical-align: bottom;
 }
 
 .home-link--hailo {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     color: #08ABF0;
     text-decoration: none;
     &:hover {
-        color: #08ABF0;
+        color: #fff;
         text-decoration: none;
+        background: #08ABF0;
+
     }
 }
 
@@ -532,55 +551,28 @@ button {
     padding-top: 40px;
     color: #B04ADB;
     text-decoration: none;
+    padding-left: 0;
+    padding-right: 0;
     &:hover {
-        color: #B04ADB;
+        color: #fff;
         text-decoration: none;
+        background: #B04ADB;
+    }
+    h2,span {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
-.home-feature {
-    display: block;
-    background-color: #F6F6F6;
-    padding: 40px;
-    text-decoration: none;
-    h3 {
-        margin: 0;
-    }
-    &:hover {
-        .home-feature__meta {
-            opacity: 1;
-            bottom: 0;
-        }
-    }
-}
+.home-link--lmn__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    cursor: pointer;
 
-.home-feature--plot {
-    color: #E72C1F;
-    border-top: 4px #E72C1F solid;
-    &:hover {
-        color: #E72C1F;
-        text-decoration: none;
-    }
-}
-
-.home-feature--lmn {
-    border-top: 4px #B04ADB solid;
-    color: #B04ADB;
-    &:hover {
-        color: #B04ADB;
-        text-decoration: none;
-    }
-}
-
-.home-feature__meta {
-    position: relative;
-    display: block;
-    bottom: -100px;
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
 }
 
 /*------------------------------------*\
@@ -627,7 +619,6 @@ button {
 \*------------------------------------*/
 
 .home-post {
-    border-bottom: 1px $grey-borders solid;
     margin-bottom: 40px;
     &:last-of-type {
         border-bottom: 0;
@@ -756,6 +747,11 @@ hr {
     padding-top: 40px;
     padding-bottom: 40px;
     border-top: 1px $grey-borders solid;
+}
+
+.home-pagination {
+    border-top: 0;
+    padding-top: 20px;
 }
 
 .previous-post-or-archive-link, .next-post-link {
@@ -1237,6 +1233,41 @@ hr {
 
 .portfolio-fullwidth .portfolio-photo-entry__arrow {
     width: auto;
+}
+
+// Slides
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
 }
 
 @import "highlights"; 
