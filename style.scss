@@ -496,6 +496,17 @@ button {
     border-top: 1px $grey-borders solid; 
 }
 
+@media only screen and (max-width : 610px) {
+    .home-intro {
+        font-size: 1.3rem;
+    }
+
+    .home-posts {
+        font-size: 1.3rem;
+        padding-top: 40px;
+    }
+}
+
 .home-link {
     background-color: #F6F6F6;
     display: block;
@@ -508,6 +519,15 @@ button {
     transition: all 0.2s ease-in-out;
     h2 {
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width : 610px) {
+    .home-link {
+        background-color: #F6F6F6;
+        display: block;
+        margin-bottom: 40px;
+        padding: 20px 20px 0 20px;
     }
 }
 
@@ -531,6 +551,9 @@ button {
     width: 40%;
     display: inline-block;
     vertical-align: bottom;
+    @media only screen and (max-width : 610px) {
+        width: 60%;
+    }
 }
 
 .home-link--hailo {
@@ -548,7 +571,6 @@ button {
 
 .home-link--lmn {
     text-align: center;
-    padding-top: 40px;
     color: #B04ADB;
     text-decoration: none;
     padding-left: 0;
@@ -1192,6 +1214,7 @@ hr {
 
 .portfolio-photo-entry__text {
     position: absolute;
+    z-index: 3;
     top: 10px;
     left: 10px;
     right: 0;
