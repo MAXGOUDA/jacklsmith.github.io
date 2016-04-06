@@ -449,9 +449,9 @@ button {
         padding-right: 30px;
     }
     .site-nav {
-        font-size: 0.9em;
+        font-size: 0.8em;
         li {
-            margin-right: 25px;
+            margin-right: 20px;
             &:last-of-type {
                 margin-right: 0
             }
@@ -1209,6 +1209,11 @@ hr {
     position: relative;
     img {
         vertical-align: middle;
+    }
+    @media only screen and (max-width : 440px) {
+        float: none;
+        width: 100%;
+        display: block;
     }
 }
 
