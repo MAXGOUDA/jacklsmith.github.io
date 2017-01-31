@@ -545,12 +545,16 @@ button {
     margin-bottom: 40px;
     padding: 40px 40px 0 40px;
     position: relative;
+    cursor: pointer;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     h2 {
         margin-bottom: 20px;
+    }
+    * {
+        cursor: pointer;
     }
 }
 
@@ -601,6 +605,19 @@ button {
     }
 }
 
+.home-link--tundra {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #175293;
+    text-decoration: none;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        background: #48A8E4;
+
+    }
+}
+
 .home-link--lmn {
     text-align: center;
     color: #B04ADB;
@@ -628,6 +645,38 @@ button {
     cursor: pointer;
 
 }
+
+.home-link--ekko {
+    text-align: center;
+    color: #DA4177;
+    text-decoration: none;
+    padding-left: 0;
+    padding-right: 0;
+    //padding-bottom: 20px;
+    &:hover {
+        color: #313131;
+        text-decoration: none;
+        background: #FFE952;
+    }
+    h2,span {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.home-link--ekko__animation {
+    background: #fff;
+    padding: 40px;
+    //-webkit-box-shadow:inset 0 0 40px 0 rgba(0,0,0,0.05);
+    //box-shadow:inset 0 0 40px 0 rgba(0,0,0,0.05);
+    //border-top: 1px rgba(0,0,0,0.08) solid;
+    //margin: 0 20px;
+    opacity: 0.7;
+    img {
+        width: 400px;
+    }
+}
+
 
 /*------------------------------------*\
     #ABOUT-PAGE
@@ -999,6 +1048,16 @@ hr {
     img {
         width: 100%;
     }
+    .big-inline-screeny {
+        max-width: 1000px;
+        width: calc(100% - 50px);
+        margin-left: 50px;
+        border: 18px #fff solid;
+        @media only screen and (max-width : 715px) {
+            width: calc(100% - 30px);
+            margin-left: 30px;
+        }
+    }
 }
 
 @media only screen and (max-width : 715px) {
@@ -1006,6 +1065,86 @@ hr {
         padding-left: 0;
     }
 }
+
+// Custom image rows for single project views
+
+.portfolio-fullwidth--post {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    @media only screen and (max-width : 715px) {
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+    
+}
+
+.portfolio-fullwidth--tundra-dark {
+    background-color: #292929;
+    text-align: center;
+}
+
+.portfolio-fullwidth--ekko-yellow {
+    background-color: #FFE952;
+    text-align: center;
+}
+
+.portfolio-fullwidth--funk-blue {
+    background-color: #031634;
+    text-align: center;
+}
+
+.ekko-project__logo {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    img {
+        width: 494px;
+        max-width: 70%;
+    }
+    @media only screen and (max-width : 715px) {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+.ekko-project__triangle {
+    margin-bottom: 200px;
+    text-align: center;
+    img {
+        width: 271px;
+        max-width: 40%;
+    }
+    @media only screen and (max-width : 715px) {
+        margin-bottom: 100px;
+    }
+}
+
+.ekko-project__circle {
+    margin-bottom: 140px;
+    text-align: right;
+    img {
+        width: 263px;
+        max-width: 40%;
+    }
+    @media only screen and (max-width : 715px) {
+        margin-bottom: 80px;
+    }
+}
+
+.ekko-project__animation {
+    margin-bottom: 200px;
+    text-align: center;
+    img {
+        width: 675px;
+        max-width: 100%;
+    }
+    @media only screen and (max-width : 715px) {
+        margin-bottom: 100px;
+    }
+}
+
+// End custom image rows
 
 .portfolio-entry {
     margin-bottom: 40px;
@@ -1117,7 +1256,7 @@ hr {
     z-index: 0;
     min-width: 100%;
     min-height: 100%;
-    max-width: 1000%;
+    max-width: 100%;
 }
 
 .study-intro-video {
