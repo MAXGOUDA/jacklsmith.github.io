@@ -1,0 +1,155 @@
+---
+layout: portfolio
+title: Parkd
+excerpt: A case study on designing a whole new company. Parkd is a mobile app for tracking and paying for parking. 
+---
+<div class="study-intro-wrap">
+	<div class="study-intro">
+		<div class="study-intro-video-wrap">
+			<img src="/images/portfolio/parkd-cover.jpg" class="intro-cover-image" />
+		</div>
+	</div>
+	<div class="intro-video-overlay">
+		<div class="grid grid-pad main-grid">
+			<div class="col-1-1 live-link-wrap">
+				<h1 class="mini-m">Parkd</h1>
+				<p class="no-m study-desc-intro">Making parking quicker and easier.</p>
+				<a href="http://parkd.be" class="butt live-link">View parkd.be</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="cf">
+	<div class="grid grid-pad main-grid">
+		<div class="col-1-1">
+			<p class="intro-paragraph">I worked with the team at <a href="http://parkd.be">Parkd</a> for a year from 2016 to 2017. While early work involved designing experimental apps around vehicle fleet tracking, we eventually decided most traction was with a small 3 day hack to automate parking payments.</p>
+			<h2>Initial quick prototype</h2>
+			<p>A preview of the main screens, designed at a fast pace to give the developers something to work with.</p>
+			
+			<div class="grid">
+				<div class="col-1-2 mob-col-full">
+					<p><img src="/images/portfolio/parkd-early-prototype-1.jpg" class="inline-screeny" /></p>
+				</div>
+				<div class="col-1-2 mob-col-full">
+					<p><img src="/images/portfolio/parkd-early-prototype-2.jpg" class="inline-screeny" /></p>
+				</div>
+			</div>
+			
+			<h2>How Parkd works</h2>
+			<p>At it's simplest, Parkd allows drivers to pay for their parking via an app. Using your location, it'll know the pricing/rate of the relevant parking spot. Elsewhere in the app, you can then view your parking activity and receipts.</p>
+
+			<p>However, Parkd also offer an OBD device that can be plugged into nearly all modern vehicles. This allows Parkd to be fully automatic, with parking sessions started and stopped without touching a thing. The app can than be used to browse past activity, adjust payments, and peruse other information.</p>
+			
+			<aside class="centered-folio-image">
+				<img src="/images/portfolio/parkd-obd.jpg" class="centered-folio-image__small" />
+				<p class="image-caption">The plug in OBD device.</p>
+			</aside>
+			
+			<h2>Designing Parkd</h2>
+			
+			<p>In terms of individual views, Parkd is a fairly small app. A lot of the design work centred around reacting to different circumstances and notifications (there's many scenarios that can affect a parking session).</p>
+	 
+			<p>React Native was utilised to make multi platform iOS and Android development easier and quicker. This meant interface design couldn't be too opinionated towards either platform.</p>
+			
+			<div class="grid">
+				<div class="col-1-2 mob-col-full">
+					<p><img src="/images/portfolio/parkd-home.jpg" class="inline-screeny" /></p>
+				</div>
+				<div class="col-1-2 mob-col-full">
+					<p><img src="/images/portfolio/parkd-card-details.jpg" class="inline-screeny medium-m" /></p>
+				</div>
+			</div>
+			
+			<div class="grid">
+				<div class="col-1-2 mob-col-full">
+					<h3>A minimal dashboard</h3>
+
+					<p>It was decided from the start that the map should be a focal point of the UI, as it can be used to show the different parking zones close to the driver.</p>
+
+					<p>At the bottom, we just pull through the super high priority details. When a parking session is active, more details are accessible by tapping the block's arrow icon.</p>
+					
+					<img src="/images/portfolio/parkd-parking-open.jpg" class="inline-screeny medium-m" />
+				</div>
+				<div class="col-1-2 mob-col-full">
+					<img src="/images/portfolio/parkd-dash-home.jpg" class="inline-screeny medium-m" />
+					<img src="/images/portfolio/parkd-parking-receipt.jpg" class="inline-screeny large-m" />
+				</div>
+			</div>
+			
+			<div class="grid">
+				<div class="col-1-2 mob-col-full">
+					<h3>Your parking history</h3> 
+
+					<p>Once a parking session is complete, the driver is shown a receipt with the details of the park.</p>
+
+					<p>These are also accessible at any point from the parking history view, where sessions can also easily be marked as a business expense.</p>
+				</div>
+				<div class="col-1-2 mob-col-full">
+					<img src="/images/portfolio/parkd-parking-history.jpg" class="inline-screeny large-m" />
+				</div>
+			</div>
+			
+			<div class="grid">
+				<div class="col-1-2 mob-col-full">
+					<img src="/images/portfolio/parkd-nav.jpg" class="inline-screeny large-m" />
+				</div>
+				
+				<div class="col-1-2 mob-col-full">
+					<h3>Navigating the app </h3>
+					<p>I'm generally a big advocate for tab based navigation in mobile apps, but this was one occasion where a hidden hamburger nav made a lot of sense. Ultimately, the home screen is what will be used by drivers 75% of the time. It didn't make sense to constantly force links to the other views in the main screen. </p>
+				</div>
+			</div>
+			
+			<div class="grid">
+				<div class="col-1-2 mob-col-full">
+					<h3>Notifications</h3>
+
+					<p>We wanted to create an interface that could be utilised for any notification. While early versions used slide down banners, these didn't work so well for notifications where actions are required. So we opted for modal style alerts that can't be ignored.</p>
+				</div>
+				<div class="col-1-2 mob-col-full">
+					<img src="/images/portfolio/parkd-max-notification.jpg" class="inline-screeny large-m" />
+				</div>
+			</div>
+			
+			<div class="grid">
+				<div class="col-1-2 mob-col-full">
+					<h3 class="no-m">Park and Forget</h3>
+					<p class="text-caption">Onboarding and setup of the Parkd OBD device</p>
+			
+					<p>As mentioned previously, Parkd can be extended via a plug in device that automates all your parking activity. This requires a bit of setup within the app, which uses a step-by-step introduction and activation flow.</p>
+					
+					<img src="/images/portfolio/parkd-serial-number.jpg" class="inline-screeny medium-m" />
+					
+					<img src="/images/portfolio/parkd-connected.jpg" class="inline-screeny large-m" />
+				</div>
+				<div class="col-1-2 mob-col-full">
+					<img src="/images/portfolio/parkd-and-forget.jpg" class="inline-screeny medium-m" />
+					
+					<img src="/images/portfolio/parkd-plug-in.jpg" class="inline-screeny large-m" />
+				</div>
+			</div>
+				
+			
+			<h2>Creating a website </h2>
+			
+			<p>With the app virtually ready for submission to the two stores, I travelled over to Antwerp to work on the Parkd website.</p>
+			
+			<h3>Some key screens</h3>
+			
+		</div>
+	</div>
+</div>
+<div class="cf">
+	<div class="portfolio-fullwidth portfolio-fullwidth--post portfolio-fullwidth--parkd-blue">
+		<img src="/images/portfolio/parkd-web-home.jpg" class="big-inline-screeny" alt="Parkd homepage" />
+	</div>
+</div>
+<div class="cf">
+	<div class="grid grid-pad main-grid main-grid">
+		<div class="col-1-1">
+			<p><img src="/images/portfolio/parkd-web-cities.jpg" alt="The cities page" class="inline-screeny" /></p>
+			<p><img src="/images/portfolio/parkd-web-business.jpg" alt="The business page" class="inline-screeny" /></p>
+			<p><img src="/images/portfolio/parkd-web-careers.jpg" alt="The careers entry page" class="inline-screeny" /></p>
+		</div>
+	</div>
+</div>
