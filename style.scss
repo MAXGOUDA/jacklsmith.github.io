@@ -85,6 +85,10 @@ $yellow-light: #FFFECA;
     font-style: italic;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /*------------------------------------*\
     #TYPE
 \*------------------------------------*/
@@ -618,16 +622,18 @@ button {
     }
 }
 
-.home-link--tundra {
+.home-link--outline {
     text-align: center;
     padding-bottom: 10px;
-    color: #175293;
+    color: #08192C;
     text-decoration: none;
+    transition: 0s;
     &:hover {
         color: #fff;
         text-decoration: none;
-        background: #48A8E4;
-
+        background-color: #39d2f7;
+        background-image: -webkit-linear-gradient(#39D2F7,#EE2560);
+        background-image: linear-gradient(#39D2F7,#EE2560);
     }
 }
 
@@ -659,21 +665,25 @@ button {
 
 }
 
-.home-link--ekko {
+.home-link--honest-work {
     text-align: center;
-    color: #DA4177;
+    color: #F289C2;
     text-decoration: none;
     padding-left: 0;
     padding-right: 0;
     //padding-bottom: 20px;
     &:hover {
-        color: #313131;
+        color: #fff;
         text-decoration: none;
-        background: #FFE952;
+        background: #F289C2;
     }
     h2,span {
         padding-left: 40px;
         padding-right: 40px;
+    }
+    img {
+        max-width: 115px;
+        margin: 0 30px 30px;
     }
 }
 
@@ -698,6 +708,7 @@ button {
 .about-page-photo {
     float: right;
     margin-left: 40px;
+    margin-bottom: 40px;
     max-width: 300px;
 }
 
@@ -728,6 +739,25 @@ button {
            border-top: 1px $grey-borders solid; 
         }
     }
+}
+
+
+.portfolio-prev-macbook {
+    
+    margin: 20px 30px 40px;
+    position: relative;
+    
+}
+
+.portfolio-prev-macbook__vid {
+    
+    width: 75.3%;
+    max-width: 437px;
+    height: auto;
+    left: 12.5%;
+    top: 7.4%;
+    position: absolute;
+    
 }
 
 /*------------------------------------*\
@@ -1090,6 +1120,55 @@ hr {
     margin-bottom: 15px;
 }
 
+.big-inline-screeny--shadow {
+    
+    margin: 50px 50px 50px 100px;
+    -webkit-box-shadow: 0 20px 100px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 20px 100px 0 rgba(0,0,0,0.15);
+    max-width: 1000px;
+    
+    @media only screen and (max-width : 1050px) {
+    
+        margin: 25px 0 25px 50px;
+    
+    }
+    
+    @media only screen and (max-width : 715px) {
+     
+        margin: 15px 0 15px 30px;
+        -webkit-box-shadow: 0 10px 60px 0 rgba(0,0,0,0.15);
+        box-shadow: 0 10px 60px 0 rgba(0,0,0,0.15);
+    
+    }
+    
+    .big-inline-screeny {
+        margin-left: 0;
+        width: 100%;
+        border: 0;
+        @media only screen and (max-width : 715px) {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+    
+}
+
+.big-inline-screeny--shadow--smaller {
+    
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.big-inline-screeny--mob {
+    
+    border: 0;
+    max-width: 300px;
+    
+}
+
 // Custom image rows for single project views
 
 .portfolio-fullwidth--post {
@@ -1121,6 +1200,11 @@ hr {
 
 .portfolio-fullwidth--funk-blue {
     background-color: #031634;
+    text-align: center;
+}
+
+.portfolio-fullwidth--grey {
+    background-color: #DADADA;
     text-align: center;
 }
 
