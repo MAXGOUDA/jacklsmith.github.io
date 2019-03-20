@@ -1103,6 +1103,24 @@ hr {
     }
 }
 
+.recent-block {
+    
+    background: $grey-light;
+    padding: 40px 40px 0 40px;
+    margin-bottom: 60px;
+    
+}
+
+
+.vhi-image {
+    
+    width: 45%;
+    display: inline-block;
+    margin-top: 10px;
+    
+}
+
+
 @media only screen and (max-width : 715px) {
     .portfolio-fullwidth {
         padding-left: 0;
@@ -1585,5 +1603,23 @@ hr {
   width: 100%;
   border: 0;
 }
+
+
+.mb-0 {
+    
+    margin-bottom: 0;
+    
+}
+
+
+// Type
+
+.text-center {
+    
+    text-align: center;
+    
+}
+
+
 
 @import "highlights"; 
