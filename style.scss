@@ -709,7 +709,7 @@ button {
     float: right;
     margin-left: 40px;
     margin-bottom: 40px;
-    max-width: 300px;
+    max-width: 230px;
 }
 
 @media only screen and (max-width : 860px) {
@@ -759,6 +759,26 @@ button {
     position: absolute;
     
 }
+
+.mob-vid-wrap {
+    
+    width: 70%;
+    margin: 15%;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.mob-vid {
+    
+    width: calc(100% + 10px);
+    height: auto;
+    margin-left: -5px;
+    margin-bottom: -5px;
+    
+}
+
+
 
 /*------------------------------------*\
     #POSTS
